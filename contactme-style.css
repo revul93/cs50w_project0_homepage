@@ -1,0 +1,36 @@
+.contact-container {
+    margin-top: 5vh;
+    padding: 25px;
+    border: 1px solid darkgrey;
+}
+
+.contact-items {
+    width: 60%;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin: 7px auto;
+}
+
+form {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.form-control-group {
+    margin: 2vh 5%;
+}
+
+.form-control-group label {
+    width: 20%;
+}
+
+.form-control-group input {
+    width: 70%;
+    padding: 1px;
+}
+
+textarea {
+    width: 90%;
+    height: 250px;
+    padding: 5px;
+}

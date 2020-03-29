@@ -1,0 +1,9 @@
+function fearNotLetter(str) {
+  const alphanumeric = [...'abcdefghijklmnopqrstuvwxyz'];
+  return alphanumeric.slice(
+      alphanumeric.findIndex(key => key === str[0]),
+      alphanumeric.findIndex(key => key === str[str.length - 1]) + 1)
+    .find(key => !str.match(key))
+}
+
+fearNotLetter("abcdefghijklmnopqrstuvwxyz");

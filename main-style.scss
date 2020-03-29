@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+$body-bg-color: #F0F0F0;
+$nav-bg-color: peru;
+$nav-color: white;
+$body-font-family: 'Roboto Slab', serif;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: $body-bg-color;
+    font-family: $body-font-family;
+}
+
+nav {
+    background-color: $nav-bg-color;
+    width: 100%;
+    height: 7vh;
+    min-height: 60px;
+    color: $nav-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 30;
+
+    a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        color: inherit;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    img {
+        height: 90%;
+        padding-left: 2vw;
+    }
+
+    span {
+        padding: 2vw;
+        margin-bottom: -1vh;
+        font-size: 1.3rem;
+        letter-spacing: 0.2vw;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    nav {
+        padding-left: 20%;
+    }
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#tribute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+        height: 25vh;
+        min-height: 150px;
+        margin: 5vh;
+    }
+
+    .welcome {
+        text-transform: uppercase;
+        color: #000;
+        font-weight: bolder;
+        letter-spacing: 2px;
+    }
+
+    .slogan {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        :hover {
+            color: $nav-bg-color;
+            font-weight: bolder;
+        }
+    }
+}
+
+#links {
+    margin-top: 3vh;
+}
+
+%item {
+    background-color: #C4C4C4;
+    width: 30vw;
+    max-width: 150px;
+    margin: 2vw;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.links-items {
+    @extend item;
+    img {
+        width: 100%;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    hr {
+        background-color: white;
+    }
+
+    span {
+        display: block;
+        padding-bottom: 10px;
+        color: #090909;
+        font-size: 1.4rem;
+    }
+}
